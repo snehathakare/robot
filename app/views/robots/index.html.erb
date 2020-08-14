@@ -1,0 +1,6 @@
+<h1>Index Page</h1>
+<ul>
+	<% @robots.each do |r| %>
+		<li><%= link_to r.name, robot_path(r) %></li>
+	<% end %>
+</ul>
